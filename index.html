@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Agra</title>
+    <title>Portofolio-Agra</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    
+     
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content floating">
+            <h1>Welcome <span id="username"></span> to My Portfolio</h1>
+            <p></p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content" data-aos="fade-up">
+            <img src="aku.jpg" alt="Profile Picture" class="profile-img">
+            <div>
+                <h2>About Me</h2>
+                <hr>
+                <p>Hello my name is Wildan Agra Baruna. I am a passionate Informatics student at Malikussaleh University, dedicated to learning and exploring new technologies. 
+                    I believe in continuous learning and applying theoretical knowledge to practical solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="experience-content">
+            <h2>Work Experience</h2>
+            <div class="experience-item" data-aos="fade-right">
+                <h3>Local WiFi Technician</h3>
+                <ul>
+                <li> Installing and maintaining WiFi networks</li>
+                <li> Troubleshooting network issues</li>
+                <li> Customer service and technical support</li>
+                <li> Network optimization and performance monitoring</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
